@@ -86,7 +86,7 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 <div id="main-section">
 <h1 style="font-size:18px;color:yellow;">Main Payloads</h1>
 <button class="btn" onmouseover="msgs.innerHTML='GoldHen v2.3b2 for 9.00 FW'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_goldhen23b2()> GoldHEN v2.3b2 </button>
-<button class="btn" onmouseover="msgs.innerHTML='GoldHen v2.2.2 for 9.00 FW'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_goldhen222()> GoldHEN v2.2.2 </button>
+<button class="btn" onmouseover="msgs.innerHTML='GoldHen v2.2.2 for 9.00 FW'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_goldhen212()> GoldHEN v2.1.2 </button>
 <button class="btn" onmouseover="msgs.innerHTML='Send a Payload using port 9020'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_binloader()> Bin Loader </button>
 <br>
 <h1 style="font-size:18px;text-align:center;">Payloads</h1>
@@ -133,7 +133,7 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Arabic Guy v1.32 (L1 + R1)'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_arabicGuy132()> Arabic Guy v1.32 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Arabic Guy v1.33 (L1 + R1)'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_arabicGuy133()> Arabic Guy v1.33 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Expulsion v4.0 - 1.38'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_Expulsion()> Expulsion v4.0 - 1.38 </button>
-<button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Lamance v0.9 - 1.38 (Right + Square)'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_Lamance()> Lamance v0.9 - 1.38 </button>
+<button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - Lamance v0.9 - 1.38 (Derecha + Cuadrado)'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_Lamance()> Lamance v0.9 - 1.38 </button>
 <br>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - WildeModz-1.32 v1.3'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_WildeModz132()> WildeModz-1.32 v1.3 </button>
 <button class="btn" onmouseover="msgs.innerHTML='GTA V Mod - WildeModz-1.33 v1.3'" onmouseout="msgs.innerHTML='DangerHost PS4 9.00 v3.0'" onclick=load_WildeModz133()> WildeModz-1.33 v1.3 </button>
@@ -151,7 +151,7 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 <button class="btn btn-web" onclick=back() style="margin-bottom: 241px"> Return </button>
 </div>
 <br>
-<h1 style="margin-top: 22px;color: yellow;">Special Thanks to:<a href="https://twitter.com/dangxr20" style="color: #f31414;margin-left: 10px;">@dangxr20</a><a style="color: white;margin-left: 10px;">CesarDanger</a></h1>
+<h1 style="margin-top: 22px;color: yellow;">Creado Por:<a href="https://twitter.com/dangxr20" style="color: #f31414;margin-left: 10px;">@dangxr20</a><a style="color: white;margin-left: 10px;">CesarDanger</a></h1>
 <script>
 for(var i=40; i<=75; i=i+5){
     var select = document.getElementById("tempC");
@@ -282,8 +282,8 @@ function load_binloader(){
         chain.fcall(libKernelBase.add32(OFFSET_lk_pthread_create), pthread, 0x0, payload_loader, payload_buffer);
     }
     chain.run();
-	LoadedMSG = "Bin Loader Launched ...";
-	alert("Waiting for Payload... Send it using the PS4 IP and port 9020");
+	LoadedMSG = "Bin Loader Lanzado";
+	alert("Esperando Payload... Envíalo Usando La IP De PS4 y El Puerto 9020");
 	allset();
 	}
 
@@ -296,7 +296,7 @@ function loadScript(path)
 }
 
 function load_linux1gb(){
-msgs.innerHTML="Linux Loader 1GB Launched ...";
+msgs.innerHTML="Linux Loader 1GB Lanzado";
 eval.call(window, loadScript('netcat.js')
 +loadScript('malloc.js')
 +loadScript('rop2.js')
@@ -308,7 +308,7 @@ eval.call(window, loadScript('netcat.js')
 }
 
 function load_linux2gb(){
-msgs.innerHTML="Linux Loader 2GB Launched ...";
+msgs.innerHTML="Linux Loader 2GB Lanzado";
 eval.call(window, loadScript('netcat.js')
 +loadScript('malloc.js')
 +loadScript('rop2.js')
@@ -320,7 +320,7 @@ eval.call(window, loadScript('netcat.js')
 }
 
 function load_linux3gb(){
-msgs.innerHTML="Linux Loader 3GB Launched ...";
+msgs.innerHTML="Linux Loader 3GB Lanzado";
 eval.call(window, loadScript('netcat.js')
 +loadScript('malloc.js')
 +loadScript('rop2.js')
@@ -332,7 +332,7 @@ eval.call(window, loadScript('netcat.js')
 }
 
 function load_linux4gb(){
-msgs.innerHTML="Linux Loader 4GB Launched ...";
+msgs.innerHTML="Linux Loader 4GB Lanzado";
 eval.call(window, loadScript('netcat.js')
 +loadScript('malloc.js')
 +loadScript('rop2.js')
@@ -344,7 +344,7 @@ eval.call(window, loadScript('netcat.js')
 }
 
 function load_linux5gb(){
-msgs.innerHTML="Linux Loader 5GB Launched ...";
+msgs.innerHTML="Linux Loader 5GB Lanzado";
 eval.call(window, loadScript('netcat.js')
 +loadScript('malloc.js')
 +loadScript('rop2.js')
@@ -356,25 +356,25 @@ eval.call(window, loadScript('netcat.js')
 }
 
 function load_goldhen23b2(){
-LoadedMSG = "GoldHEN v2.3b2 Loaded ...";
+LoadedMSG = "GoldHEN v2.3b2 Cargado";
 PLfile = "goldhen_2.3b2.bin";
 load_poc();
 }
 
-function load_goldhen222(){
-LoadedMSG = "GoldHEN v2.2.2 Loaded ...";
+function load_goldhen212(){
+LoadedMSG = "GoldHEN v2.1.2 Cargado";
 PLfile = "goldhen_2.2.2.bin";
 load_poc();
 }
 
 function load_Gdumper(){
-LoadedMSG = "Game-Dumper Loaded ...";
+LoadedMSG = "Game-Dumper Cargado";
 PLfile = "dumperG.bin";
 load_poc();
 }
 
 function load_Udumper(){
-LoadedMSG = "Update-Dumper Loaded ...";
+LoadedMSG = "Update-Dumper Cargado";
 PLfile = "dumperU.bin";
 load_poc();
 }
@@ -392,229 +392,229 @@ load_poc();
 }
 
 function load_todex(){
-LoadedMSG = "ToDex Loaded ...";
+LoadedMSG = "ToDex Cargado";
 PLfile = "todex.bin";
 load_poc();
 }
 
 function load_ftp(){
-LoadedMSG = "FTP Loaded ..."
+LoadedMSG = "FTP Cargado"
 PLfile = "ftp.bin";
 load_poc();
 }
 
 function load_app2usb(){
-LoadedMSG = "App2USB Loaded ..."
+LoadedMSG = "App2USB Cargado"
 PLfile = "app2usb.bin";
 load_poc();
 }
 
 function load_dbackup(){
-LoadedMSG = "DB Backup Loaded ..."
+LoadedMSG = "DB Backup Cargado"
 PLfile = "backup.bin";
 load_poc();
 }
 
 function load_dbrestore(){
-LoadedMSG = "DB Restore Loaded ..."
+LoadedMSG = "DB Restore Cargado"
 PLfile = "restore.bin";
 load_poc();
 }
 
 function load_enablebUpdates(){
-LoadedMSG = "Enable Updates Loaded ..."
+LoadedMSG = "Enable Updates Cargado"
 PLfile = "enable-updates.bin";
 load_poc();
 }
 
 function load_disableUpdates(){
-LoadedMSG = "Disable Updates Loaded ..."
+LoadedMSG = "Disable Updates Cargado"
 PLfile = "disable-updates.bin";
 load_poc();
 }
 
 function load_historyBlocker(){
-LoadedMSG = "History Blocker Loaded ..."
+LoadedMSG = "History Blocker Cargado"
 PLfile = "history-blocker.bin";
 load_poc();
 }
 
 function load_kernelDump(){
-LoadedMSG = "Kernel Dumper Loaded ..."
+LoadedMSG = "Kernel Dumper Cargado"
 PLfile = "kernel-dumper.bin";
 load_poc();
 }
 
 function load_moduleDump(){
-LoadedMSG = "Module Dumper Loaded ..."
+LoadedMSG = "Module Dumper Cargado"
 PLfile = "module-dumper.bin";
 load_poc();
 }
 
 function load_ps4debug(){
-LoadedMSG = "PS4 Debug Loaded ..."
+LoadedMSG = "PS4 Debug Cargado"
 PLfile = "ps4debug.bin";
 load_poc();
 }
 
 function load_disbAslr(){
-LoadedMSG = "Disable ASLR Loaded ..."
+LoadedMSG = "Disable ASLR Cargado"
 PLfile = "disable-aslr.bin";
 load_poc();
 }
 
 function load_exitidu(){
-LoadedMSG = "Exit IDU Loaded ..."
+LoadedMSG = "Exit IDU Cargado"
 PLfile = "exit-idu.bin";
 load_poc();
 }
 
 function load_rifRen(){
-LoadedMSG = "RIF Renamer Loaded ..."
+LoadedMSG = "RIF Renamer Cargado"
 PLfile = "rif-renamer.bin";
 load_poc();
 }
 
 function load_permUart(){
-LoadedMSG = "Permanent UART Loaded ..."
+LoadedMSG = "Permanent UART Cargado"
 PLfile = "permanent-uart.bin";
 load_poc();
 }
 
 function load_webrte(){
-LoadedMSG = "WebRTE Loaded ..."
+LoadedMSG = "WebRTE Cargado"
 PLfile = "webrte.bin";
 load_poc();
 }
 
 function load_toolbox(){
-LoadedMSG = "Orbis-Toolbox Loaded ..."
+LoadedMSG = "Orbis-Toolbox Cargado"
 PLfile = "Orbis-Toolbox-900.bin";
 load_poc();
 }
 
 function load_fanthreshold(){
-LoadedMSG="Fan Threshold Loaded ..."
+LoadedMSG="Fan Threshold Cargado"
 PLfile = "fan-threshold"+tempC.value+".bin";
 load_poc();
 }
 
 function load_arabicGuy100(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Arabic Guy v1.00 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Arabic Guy v1.00 Cargado"
 PLfile = "arabic-guy100.bin";
 load_poc();
 }
 
 function load_arabicGuy127(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Arabic Guy v1.27 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Arabic Guy v1.27 Cargado"
 PLfile = "arabic-guy127.bin";
 load_poc();
 }
 
 function load_arabicGuy132(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Arabic Guy v1.32 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Arabic Guy v1.32 Cargado"
 PLfile = "arabic-guy132.bin";
 exec_loader = "payload";
 load_poc();
 }
 
 function load_arabicGuy133(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Arabic Guy v1.33 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Arabic Guy v1.33 Cargado"
 PLfile = "arabic-guy133.bin";
 load_poc();
 }
 
 function load_Expulsion(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Expulsion v4.0 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Expulsion v4.0 Cargado"
 PLfile = "Expulsion-V4.0-1.38.bin";
 load_poc();
 }
 
 function load_Lamance(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Lamance v0.9 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Lamance v0.9 Cargado"
 PLfile = "Lamance-v0.9-1.38.bin";
 load_poc();
 }
 
 function load_WildeModz132(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "WildeModz-1.32 v1.3 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "WildeModz-1.32 v1.3 Cargado"
 PLfile = "WildeModz-1.32-1.3.bin";
 load_poc();
 }
 
 function load_WildeModz133(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "WildeModz-1.33 v1.3 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "WildeModz-1.33 v1.3 Cargado"
 PLfile = "WildeModz-1.33-1.3.bin";
 load_poc();
 }
 
 function load_WildeModz138(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "WildeModz-1.38 v1.7 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "WildeModz-1.38 v1.7 Cargado"
 PLfile = "WildeModz-1.38-1.7.bin";
 load_poc();
 }
 
 function load_beefQueef133(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Beef Queef Mod v1.33 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Beef Queef Mod v1.33 Cargado"
 PLfile = "BeefQueefMod-133.bin";
 load_poc();
 }
 
 function load_beefQueef134(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Beef Queef Mod v1.34 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Beef Queef Mod v1.34 Cargado"
 PLfile = "BeefQueefMod-134.bin";
 load_poc();
 }
 
 function load_beefQueef138(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Beef Queef Mod v1.38d Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Beef Queef Mod v1.38d Cargado"
 PLfile = "BeefQueefMod-138d.bin";
 load_poc();
 }
 
 function load_Oysters100(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Oysters Menu v1.00 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Oysters Menu v1.00 Cargado"
 PLfile = "OystersMenu-v1.3.7-1.00.bin";
 load_poc();
 }
 
 function load_Oysters113(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Oysters Menu v1.13 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Oysters Menu v1.13 Cargado"
 PLfile = "OystersMenu-v1.3.6-1.13.bin";
 load_poc();
 }
 
 function load_Oysters119(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Oysters Menu v1.19 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Oysters Menu v1.19 Cargado"
 PLfile = "OystersMenu-v1.3.6-1.19.bin";
 load_poc();
 }
 
 function load_Oysters124(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Oysters Menu v1.24 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Oysters Menu v1.24 Cargado"
 PLfile = "OystersMenu-v1.3.7-1.24.bin";
 load_poc();
 }
 
 function load_Oysters129(){
-msgs.innerHTML="Loading... Please Wait";
-LoadedMSG = "Oysters Menu v1.29 Loaded ..."
+msgs.innerHTML="Cargando... Espere Por Favor";
+LoadedMSG = "Oysters Menu v1.29 Cargado"
 PLfile = "OystersMenu-v1.3.7-1.29.bin";
 load_poc();
 }
